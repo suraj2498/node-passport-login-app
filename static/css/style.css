@@ -1,0 +1,84 @@
+body{
+    overflow: hidden;
+}
+
+#bg-image{
+    background-image: url('image.png') ;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 110%;
+    height: 110%;
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    filter: blur(6px);
+}
+
+footer{
+    position: absolute;
+    font-style: italic;
+    color: #08F09D;
+    font-size: 1.7em;
+    bottom: 2%;
+    left: 1%
+}
+
+footer a{
+    color: #08F09D !important;
+}
+
+
+@media only screen and (max-height: 500px){
+    body{
+        overflow-y: visible;
+        overflow-x: hidden;
+    }
+}
+
+@media only screen and (max-height: 600px){
+    footer{
+        display: none;
+    }
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#dashDiv{
+    position: relative;
+    background-color: white;
+    width: 50vw;
+    height: 50vh;
+    min-width: 400px;
+    min-height: 300px;
+    z-index:1;
+}
+
+#dashDiv h1{
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%,-50%);
+    font-size: 7vw;
+    font-weight: 600;
+}
+
+#dashDiv p{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    font-size: 4.5vw;
+}
+
+#dashDiv a{
+    font-size: 2.5vw;
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+}
